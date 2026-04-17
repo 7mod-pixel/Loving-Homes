@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    direction: rtl; /* اتجاه الصفحة عربي */
+    background-color: #f0f0f0; /* خلفية رمادية  */
+}
+
+/* --- القائمة الجانبية على اليسار --- */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #333333; /* لون غامق بسيط */
+    color: white;
+    position: fixed;
+    left: 0; /* تثبيت على اليسار */
+    top: 0;
+    padding: 10px;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+/* قسم اللوقو فوق الأزرار */
+.logo-section {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.logo-section img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white; /* إطار  */
+}
+
+.logo-section h3 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* الأزرار  --- */
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px;
+}
+
+.nav-links a {
+    background-color: blue; /* خلفية الازرار ازرق */
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid white; /* إطار الزر */
+}
+
+
+/* --- منطقة المحتوى الرئيسي --- */
+.main-content {
+    margin-left: 200px; /* مساحة للقائمة اليسرى */
+    padding: 20px;
+    width: 100%;
+}
+
+.content-card {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black; /* إطار عادي */
+    margin-bottom: 20px;
+}
+
+/* الجداول بشكل يدوي بسيط */
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.custom-table th {
+    background-color: #555;
+    color: white;
+}
+.services-wrapper {
+    width: 100%;
+    text-align: center; 
+    margin-top: 20px;
+}
+
+
+.service-card {
+    display: inline-block; 
+    width: 30%;            
+    min-width: 200px;      
+    border: 1px solid #000; 
+    background-color: #fff;
+    margin: 10px;          
+    padding: 15px;
+    vertical-align: top;   
+    direction: rtl;        
+}
+
+/* عنوان الخدمة داخل الكرت */
+.service-card h3 {
+    background-color: blue; /* خلفية زرقاء سادة */
+    color: white;
+    padding: 10px;
+    margin: -15px -15px 15px -15px; /* لملء الرأس بالكامل */
+    font-size: 16px;
+}
+
+/* النص والسعر */
+.service-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.price-tag {
+    font-weight: bold;
+    color: red; /* سعر بارز   */
+    display: block;
+    margin-top: 10px;
+}
